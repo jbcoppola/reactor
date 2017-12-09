@@ -82,6 +82,7 @@ body {
   align-items: center;
   background-color: $lightgreen;
   min-height: 50vh;
+  border-top: 2px solid rgba(0,0,0,0.05);
 
   > div {
     display: flex;

@@ -58,7 +58,8 @@ body {
   justify-content: space-around;
   align-items: center;
   background-color: #f1faef;
-  min-height: 50vh; }
+  min-height: 50vh;
+  border-top: 2px solid rgba(0, 0, 0, 0.05); }
   .greenbar > div {
     display: flex;
     align-items: flex-start;
