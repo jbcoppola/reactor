@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url(images/banner.png);
+  background-size: contain;
+  height: 50vh;
+
+  h4 {
+    align-self: flex-start;
+  }
+}
