@@ -2,7 +2,7 @@
 
 $orange: #e43c4b;
 $darkblue: #203858;
-
+$lightgreen: #f1faef;
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -71,7 +71,44 @@ body {
     }
     p {
       color: $darkblue;
-      margin: 0;
+      margin: 10px 0;
+    }
+  }
+}
+
+.greenbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $lightgreen;
+  min-height: 50vh;
+
+  > div {
+    display: flex;
+    align-items: flex-start;
+    width: 40vw;
+    height: 50%;
+    img {
+      min-height: 150px;
+      max-height: 20vw;
+      box-shadow: 0 0 20px gray;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0 40px;
+
+      h1 {
+        margin: 0;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+
+      p {
+        color: $darkblue;
+      }
     }
   }
 }

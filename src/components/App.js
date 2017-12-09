@@ -1,6 +1,7 @@
 import React from 'react';
 import Landing from './landing';
 import Wedo from './wedo';
+import Greenbar from './greenbar';
 
 class App extends React.Component {
     render() {
@@ -8,6 +9,7 @@ class App extends React.Component {
             <div>
             <Landing />
             <Wedo />
+            <Greenbar />
             </div>
         )
     }
