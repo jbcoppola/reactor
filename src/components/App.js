@@ -2,6 +2,7 @@ import React from 'react';
 import Landing from './landing';
 import Wedo from './wedo';
 import Greenbar from './greenbar';
+import Locations from './locations';
 
 class App extends React.Component {
     render() {
@@ -10,6 +11,7 @@ class App extends React.Component {
             <Landing />
             <Wedo />
             <Greenbar />
+            <Locations />
             </div>
         )
     }

@@ -81,3 +81,34 @@ body {
         font-weight: 500; }
       .greenbar > div div p {
         color: #203858; }
+
+.locations {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh; }
+  .locations h1 {
+    font-size: 24px;
+    margin-bottom: 70px;
+    text-transform: capitalize; }
+  .locations > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
+    .locations > div > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .locations > div > div img {
+        max-width: 50%;
+        box-shadow: 0 0 10px lightgray; }
+      .locations > div > div h2 {
+        font-size: 18px;
+        margin: 20px 0 5px 0; }
+      .locations > div > div p {
+        font-size: 14px;
+        margin: 0;
+        color: #203858; }
