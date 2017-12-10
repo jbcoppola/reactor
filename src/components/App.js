@@ -3,6 +3,7 @@ import Landing from './landing';
 import Wedo from './wedo';
 import Greenbar from './greenbar';
 import Locations from './locations';
+import Subscription from './subscription';
 
 class App extends React.Component {
     render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
             <Wedo />
             <Greenbar />
             <Locations />
+            <Subscription />
             </div>
         )
     }

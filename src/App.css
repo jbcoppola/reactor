@@ -23,7 +23,7 @@ body {
     font-size: 54px;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 0 0 5px gray; }
+    text-shadow: 0 0 5px #7c7c7c; }
   .landing h4 {
     font-size: 22px;
     letter-spacing: 1px;
@@ -50,7 +50,7 @@ body {
       margin-bottom: 5px;
       font-weight: 500; }
     .wedo div:nth-child(2) p {
-      color: #203858;
+      color: #1e3656;
       margin: 10px 0; }
 
 .greenbar {
@@ -59,7 +59,7 @@ body {
   align-items: center;
   background-color: #f1faef;
   min-height: 50vh;
-  border-top: 2px solid rgba(0, 0, 0, 0.05); }
+  border-top: 2px solid #e0e0e0; }
   .greenbar > div {
     display: flex;
     align-items: flex-start;
@@ -68,7 +68,7 @@ body {
     .greenbar > div img {
       min-height: 150px;
       max-height: 20vw;
-      box-shadow: 0 0 20px gray; }
+      box-shadow: 0 0 20px #7c7c7c; }
     .greenbar > div div {
       display: flex;
       flex-direction: column;
@@ -80,7 +80,7 @@ body {
         text-transform: capitalize;
         font-weight: 500; }
       .greenbar > div div p {
-        color: #203858; }
+        color: #1e3656; }
 
 .locations {
   display: flex;
@@ -104,11 +104,43 @@ body {
       align-items: center; }
       .locations > div > div img {
         max-width: 50%;
-        box-shadow: 0 0 10px lightgray; }
+        box-shadow: 0 0 10px #d8d8d8; }
       .locations > div > div h2 {
         font-size: 18px;
         margin: 20px 0 5px 0; }
       .locations > div > div p {
         font-size: 14px;
         margin: 0;
-        color: #203858; }
+        color: #7c7c7c; }
+
+.subscription {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 35vh;
+  border-top: 2px solid #e0e0e0; }
+  .subscription h1 {
+    color: #e43c4b;
+    text-transform: uppercase; }
+  .subscription form {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .subscription input {
+    border: 2px solid #e0e0e0;
+    width: 100%;
+    min-width: 360px;
+    font-size: 18px;
+    padding: 26px;
+    border-radius: 6px;
+    color: #1e3656; }
+  .subscription button {
+    border-radius: 60px;
+    margin-left: -60px;
+    font-size: 18px;
+    padding: 28px 48px;
+    border: none;
+    background-color: #1e3656;
+    color: white;
+    cursor: pointer; }

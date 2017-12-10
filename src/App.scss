@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 $orange: #e43c4b;
-$darkblue: #203858;
-$lightgreen: #f1faef;
+$darkblue: #1e3656;
+$lightsage: #f1faef;
+$lightgray: #e0e0e0;
+$gray: #d8d8d8;
+$darkgray: #7c7c7c;
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -35,7 +39,7 @@ body {
     font-size: 54px;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 0 0 5px gray;
+    text-shadow: 0 0 5px $darkgray;
   }
   h4 {
     font-size: 22px;
@@ -80,9 +84,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: $lightgreen;
+  background-color: $lightsage;
   min-height: 50vh;
-  border-top: 2px solid rgba(0,0,0,0.05);
+  border-top: 2px solid $lightgray;
 
   > div {
     display: flex;
@@ -92,7 +96,7 @@ body {
     img {
       min-height: 150px;
       max-height: 20vw;
-      box-shadow: 0 0 20px gray;
+      box-shadow: 0 0 20px $darkgray;
     }
     div {
       display: flex;
@@ -133,26 +137,70 @@ body {
     justify-content: space-around;
     width: 100%;
 
-
     > div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    img {
-      max-width: 50%;
-      box-shadow: 0 0 10px lightgray;
-    }
-    h2 {
-      font-size: 18px;
-      margin: 20px 0 5px 0;
-    }
-    p {
-      font-size: 14px;
-      margin: 0;
-      color: $darkblue;
-    }
 
+      img {
+        max-width: 50%;
+        box-shadow: 0 0 10px $gray;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin: 20px 0 5px 0;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0;
+        color: $darkgray;
+      }
     }
+  }
+
+}
+
+.subscription {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: 35vh;
+  border-top: 2px solid $lightgray;
+
+  h1 {
+    color: $orange;
+    text-transform: uppercase;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    border: 2px solid $lightgray;
+    width: 100%;
+    min-width: 360px;
+    font-size: 18px;
+    padding: 26px;
+    border-radius: 6px;
+    color: $darkblue;
+  }
+
+  button {
+    border-radius: 60px;
+    margin-left: -60px;
+    font-size: 18px;
+    padding: 28px 48px;
+    border: none;
+    background-color: $darkblue;
+    color: white;
+    cursor: pointer;
   }
 }
