@@ -4,6 +4,7 @@ import Wedo from './wedo';
 import Greenbar from './greenbar';
 import Locations from './locations';
 import Subscription from './subscription';
+import Footer from './footer';
 
 class App extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
             <Greenbar />
             <Locations />
             <Subscription />
+            <Footer />
             </div>
         )
     }

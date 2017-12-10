@@ -204,3 +204,18 @@ body {
     cursor: pointer;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 15vh;
+  background-color: $darkblue;
+  color: white;
+
+  p {
+
+  }
+}
