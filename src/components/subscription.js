@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 class Subscription extends React.Component {
     constructor(props) {
@@ -15,12 +16,14 @@ class Subscription extends React.Component {
     
       handleSubmit(event) {
         event.preventDefault();
-        url: 'http://dev3.apppartner.com/Reactors/scripts/add-email.php';
+        let url = 'http://dev3.apppartner.com/Reactors/scripts/add-email.php';
+        let e = '123@aol.com'
         return axios.post(url, {
-            email: this.state.email
+              email: e
           })
           .then(function (response) {
             console.log(response);
+            console.log(response.data);
           })
           .catch(function (error) {
             console.log(error);
@@ -35,7 +38,7 @@ class Subscription extends React.Component {
                 <h1>Subscribe to newsletter</h1>
                 </div>
                 <form onSubmit={this.handleSubmit}>
-                <input type='text' value={this.state.email} placeholder='Your Email' /><button type='submit'>Subscribe</button>
+                <input type='text' value={this.state.email} placeholder='Your Email' onChange={this.handleChange}/><button type='submit'>Subscribe</button>
                 </form>
             </div>
             )
