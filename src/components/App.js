@@ -1,22 +1,13 @@
-import React from 'react';
-import Landing from './landing';
-import Wedo from './wedo';
-import Greenbar from './greenbar';
-import Locations from './locations';
-import Subscription from './subscription';
-import Footer from './footer';
+import React, { Component } from 'react';
+import Main from './views/Main';
+import Login from './views/login';
 
 class App extends React.Component {
     render() {
         return (
             <div>
-            <Landing />
-            <Wedo />
-            <Greenbar />
-            <Locations />
-            <Subscription />
-            <Footer />
-            </div>
+            {this.props.children}
+          </div>
         )
     }
 }

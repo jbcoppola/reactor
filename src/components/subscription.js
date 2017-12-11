@@ -17,10 +17,13 @@ class Subscription extends React.Component {
       handleSubmit(event) {
         event.preventDefault();
         let url = 'http://dev3.apppartner.com/Reactors/scripts/add-email.php';
-        let e = '123@aol.com'
-        return axios.post(url, {
-              email: e
-          })
+        var querystring = require('querystring');
+        return axios.post(url, querystring.stringify({
+            email: '123@aol.com'
+          }), {
+          headers: { 
+            "Content-Type": "application/x-www-form-urlencoded"
+          }})
           .then(function (response) {
             console.log(response);
             console.log(response.data);
