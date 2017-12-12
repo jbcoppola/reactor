@@ -12,7 +12,7 @@ class Login extends Component {
 
      handleSubmit(event) {
       event.preventDefault();
-      let url = 'http://dev3.apppartner.com/Reactors/scripts/add-email.php';
+      let url = 'http://dev3.apppartner.com/Reactors/scripts/user-login.php';
       var querystring = require('querystring');
       return axios.post(url, querystring.stringify({
           email: '123@aol.com'
@@ -33,8 +33,8 @@ class Login extends Component {
         return (
           <div className="login-page">
             <form>
-              <input name='email' type="text" placeholder="enter email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
-              <input name='password' type="text" placeholder="enter password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
+              <input className='email' name='email' type="text" placeholder="Email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
+              <input className='password' name='password' type="text" placeholder="Password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
               <button label="Submit" onClick={(event) => this.handleClick(event)}>Sign up</button>
             </form>
           </div>

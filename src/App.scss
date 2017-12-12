@@ -243,13 +243,35 @@ body {
 
     input {
       margin: 10px;
-      background-color: rgba($darkblue, 0.2);
+      background-color: rgba($darkblue, 0.4);
       color: white;
       border: none;
       min-width: 360px;
-      font-size: 18px;
+      font-size: 20px;
       padding: 26px;
+      padding-left: 80px;
       border-radius: 52px;
+      opacity: 0.5;
+    }
+
+    .email {
+      background: {
+        image: url(./images/ic-email.png);
+        repeat: no-repeat;
+        align: left;
+        position: 30px 23px;
+        size: 30px;
+      }
+    }
+
+    .password {
+      background: {
+        image: url(./images/ic-password.png);
+        repeat: no-repeat;
+        align: left;
+        position: 30px 23px;
+        size: 30px;
+      }
     }
 
     button {
