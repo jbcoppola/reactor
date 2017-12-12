@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import { Route, Redirect } from 'react-router'
 import axios from 'axios';
 
-class Login extends Component {
+class Login extends React.Component {
     constructor(props){
       super(props);
       this.state={
@@ -13,29 +14,27 @@ class Login extends Component {
      handleSubmit(event) {
       event.preventDefault();
       let url = 'http://dev3.apppartner.com/Reactors/scripts/user-login.php';
-      var querystring = require('querystring');
-      return axios.post(url, querystring.stringify({
-          email: '123@aol.com'
-        }), {
-        headers: { 
-          "Content-Type": "application/x-www-form-urlencoded"
-        }})
+
+      var form = new FormData(event.target);
+
+      return axios.post(url, form)
         .then(function (response) {
+          
+          this.props.history.push('/');
           console.log(response);
           console.log(response.data);
-        })
+        }.bind(this))
         .catch(function (error) {
           console.log(error);
         });
     }
-
     render() {
         return (
           <div className="login-page">
-            <form>
+            <form onSubmit={this.handleSubmit.bind(this)}>
               <input className='email' name='email' type="text" placeholder="Email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
               <input className='password' name='password' type="text" placeholder="Password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
-              <button label="Submit" onClick={(event) => this.handleClick(event)}>Sign up</button>
+              <button label="Submit">Sign up</button>
             </form>
           </div>
         );
