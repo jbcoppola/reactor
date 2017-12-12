@@ -31,11 +31,11 @@ class Login extends Component {
 
     render() {
         return (
-          <div>
+          <div className="login-page">
             <form>
               <input name='email' type="text" placeholder="enter email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
               <input name='password' type="text" placeholder="enter password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
-              <button label="Submit" onClick={(event) => this.handleClick(event)}/>
+              <button label="Submit" onClick={(event) => this.handleClick(event)}>Sign up</button>
             </form>
           </div>
         );

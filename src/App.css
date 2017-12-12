@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(images/banner.png);
+  background-image: url(/images/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,3 +153,38 @@ body {
   height: 15vh;
   background-color: #1e3656;
   color: white; }
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(images/onboarding-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .login-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .login-page form input {
+      margin: 10px;
+      background-color: rgba(30, 54, 86, 0.2);
+      color: white;
+      border: none;
+      min-width: 360px;
+      font-size: 18px;
+      padding: 26px;
+      border-radius: 52px; }
+    .login-page form button {
+      margin-top: 30px;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 26px;
+      color: white;
+      border-radius: 52px;
+      background-color: #e43c4b;
+      border: none;
+      width: 95%;
+      cursor: pointer; }

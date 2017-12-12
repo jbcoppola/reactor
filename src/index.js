@@ -10,7 +10,7 @@ const Root = () => {
     return (
     <BrowserRouter>
         <div>
-        <Route path='/' component={Main} />
+        <Route exact path='/' component={Main} />
         <Route path='/login' component={Login} />
         </div>
     </BrowserRouter>

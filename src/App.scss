@@ -10,6 +10,7 @@ $darkgray: #7c7c7c;
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+
 }
 
 .landing {
@@ -18,8 +19,9 @@ body {
   justify-content: space-between;
   align-items: center;
 
+
   background: {
-    image:url(images/banner.png);
+    image:url(/images/banner.png);
     position:center;
     size:cover;
     repeat:no-repeat;
@@ -217,5 +219,50 @@ body {
 
   p {
 
+  }
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  background: {
+    image:url(images/onboarding-bg.png);
+    position:center;
+    size:cover;
+    repeat:no-repeat;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      margin: 10px;
+      background-color: rgba($darkblue, 0.2);
+      color: white;
+      border: none;
+      min-width: 360px;
+      font-size: 18px;
+      padding: 26px;
+      border-radius: 52px;
+    }
+
+    button {
+      margin-top: 30px;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 26px;
+      color: white;
+      border-radius: 52px;
+      background-color: $orange;
+      border: none;
+      width: 95%;
+      cursor: pointer;
+    }
   }
 }
