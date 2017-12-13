@@ -252,25 +252,29 @@ body {
       padding-left: 80px;
       border-radius: 52px;
       opacity: 0.5;
-    }
 
-    .email {
       background: {
-        image: url(./images/ic-email.png);
         repeat: no-repeat;
         align: left;
         position: 30px 23px;
         size: 30px;
       }
     }
+    .email {
+      background: {
+        image: url(./images/ic-email.png);
+      }
+    }
 
     .password {
       background: {
         image: url(./images/ic-password.png);
-        repeat: no-repeat;
-        align: left;
-        position: 30px 23px;
-        size: 30px;
+      }
+    }
+
+    .username {
+      background: {
+        image: url(./images/ic-username.png);
       }
     }
 

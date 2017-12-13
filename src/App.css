@@ -178,19 +178,17 @@ body {
       padding: 26px;
       padding-left: 80px;
       border-radius: 52px;
-      opacity: 0.5; }
+      opacity: 0.5;
+      background-repeat: no-repeat;
+      background-align: left;
+      background-position: 30px 23px;
+      background-size: 30px; }
     .login-page form .email {
-      background-image: url(./images/ic-email.png);
-      background-repeat: no-repeat;
-      background-align: left;
-      background-position: 30px 23px;
-      background-size: 30px; }
+      background-image: url(./images/ic-email.png); }
     .login-page form .password {
-      background-image: url(./images/ic-password.png);
-      background-repeat: no-repeat;
-      background-align: left;
-      background-position: 30px 23px;
-      background-size: 30px; }
+      background-image: url(./images/ic-password.png); }
+    .login-page form .username {
+      background-image: url(./images/ic-username.png); }
     .login-page form button {
       margin-top: 30px;
       font-size: 18px;

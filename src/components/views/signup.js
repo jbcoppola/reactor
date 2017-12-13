@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Route, Redirect } from 'react-router'
 import axios from 'axios';
 
-class Login extends React.Component {
+class Signup extends React.Component {
     constructor(props){
       super(props);
       this.state={
@@ -14,7 +14,7 @@ class Login extends React.Component {
 
      handleSubmit(event) {
       event.preventDefault();
-      let url = 'http://dev3.apppartner.com/Reactors/scripts/user-login.php';
+      let url = 'http://dev3.apppartner.com/Reactors/scripts/user-signup.php';
 
       var form = new FormData(event.target);
 
@@ -33,6 +33,7 @@ class Login extends React.Component {
         return (
           <div className="login-page">
             <form onSubmit={this.handleSubmit.bind(this)}>
+              <input className='username' name='username' type='text' placeholder='Username' onChange = {(event,newValue) => this.setState({username:newValue})}/>
               <input className='email' name='email' type="text" placeholder="Email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
               <input className='password' name='password' type="text" placeholder="Password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
               <button label="Submit">Sign up</button>
@@ -42,4 +43,4 @@ class Login extends React.Component {
       }
     }
     
-    export default Login;
+    export default Signup;
