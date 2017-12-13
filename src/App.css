@@ -164,6 +164,21 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+  .login-page .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-transform: uppercase; }
+    .login-page .links a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.4); }
+    .login-page .links p {
+      margin: 0;
+      color: white;
+      border-bottom: 3px solid white; }
   .login-page form {
     display: flex;
     flex-direction: column;

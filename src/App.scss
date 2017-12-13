@@ -229,6 +229,25 @@ body {
   align-items: center;
   height: 100vh;
   
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 20%;
+    margin-bottom: 20px;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    p {
+      margin: 0;
+      color: white;
+      border-bottom: 3px solid white;
+    }
+  }
   background: {
     image:url(images/onboarding-bg.png);
     position:center;

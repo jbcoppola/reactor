@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Route, Redirect } from 'react-router'
+import { Route, Redirect } from 'react-router';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 class Signup extends React.Component {
@@ -32,6 +33,7 @@ class Signup extends React.Component {
     render() {
         return (
           <div className="login-page">
+          <div className='links'><p>Signup</p><Link to={'/login/'}>Login</Link></div>
             <form onSubmit={this.handleSubmit.bind(this)}>
               <input className='username' name='username' type='text' placeholder='Username' onChange = {(event,newValue) => this.setState({username:newValue})}/>
               <input className='email' name='email' type="text" placeholder="Email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
