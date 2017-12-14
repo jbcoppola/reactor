@@ -9,8 +9,8 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o dist/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o dist/ --watch --recursive",
+    "build-css": "node-sass-chokidar src/ -o ./src/dist/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o ./src/dist/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

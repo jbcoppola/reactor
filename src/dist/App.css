@@ -8,12 +8,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url(images/banner.png);
+  background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
   max-height: 1300px;
+  min-height: 340px;
   padding: 2vh 5vw;
   color: white; }
   .landing h1, .landing h4 {
@@ -32,7 +33,8 @@ body {
 .wedo {
   display: flex;
   justify-content: center;
-  height: 40vh; }
+  height: 40vh;
+  min-height: 400px; }
   .wedo div {
     display: flex;
     width: 35vw;
@@ -41,6 +43,7 @@ body {
   .wedo div:first-child {
     justify-content: center;
     text-transform: uppercase;
+    padding: 20px;
     color: #e43c4b; }
   .wedo div:nth-child(2) {
     flex-direction: column;
@@ -160,7 +163,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url(images/onboarding-bg.png);
+  background-image: url(../images/onboarding-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -199,11 +202,11 @@ body {
       background-position: 30px 23px;
       background-size: 30px; }
     .login-page form .email {
-      background-image: url(./images/ic-email.png); }
+      background-image: url(../images/ic-email.png); }
     .login-page form .password {
-      background-image: url(./images/ic-password.png); }
+      background-image: url(../images/ic-password.png); }
     .login-page form .username {
-      background-image: url(./images/ic-username.png); }
+      background-image: url(../images/ic-username.png); }
     .login-page form button {
       margin-top: 30px;
       font-size: 18px;
@@ -215,3 +218,26 @@ body {
       border: none;
       width: 95%;
       cursor: pointer; }
+
+@media (max-width: 900px) {
+  .wedo, .greenbar, .locations, .subscription {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center; }
+    .wedo div, .greenbar div, .locations div, .subscription div {
+      width: 90vw; }
+  .locations div {
+    padding: 10px;
+    flex-direction: column; } }
+
+@media (max-width: 600px) {
+  .greenbar div {
+    flex-direction: column;
+    align-items: center; }
+  .greenbar div * {
+    margin: 10px; }
+  .subscription form input {
+    padding: 13px;
+    min-width: 200px; }
+  .subscription form button {
+    padding: 13px; } }
