@@ -231,7 +231,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   
   .links {
     display: flex;
@@ -244,10 +244,12 @@ body {
     text-transform: uppercase;
 
     a {
+      padding: 5px;
       text-decoration: none;
       color: rgba(255, 255, 255, 0.4);
     }
     p {
+      padding: 5px;
       margin: 0;
       color: white;
       border-bottom: 3px solid white;
@@ -256,8 +258,9 @@ body {
   background: {
     image:url(../images/onboarding-bg.png);
     position:center;
-    size:cover;
+    size:scale;
     repeat:no-repeat;
+    
   }
 
   form {
@@ -353,6 +356,24 @@ body {
     }
     button {
       padding: 13px;
+    }
+  }
+
+  .login-page {
+    form {
+      width: 90vw;
+      
+      input {
+      padding: 13px;
+      padding-left: 60px;
+      width:70%;
+      min-width: 0;
+
+      background: {
+        position: 15px 10px;
+      }
+      }
+
     }
   }
 }
