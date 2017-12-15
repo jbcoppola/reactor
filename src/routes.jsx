@@ -10,6 +10,6 @@ export default (
   <Route exact path="/" component={Main}/>
     <Route path='/signup' component={Signup} />
     <Route path='/login' component={Login} />
-    <Route path='*' component={Main} />
+    <Route path='/*' component={Main} />
   </Route>
 );

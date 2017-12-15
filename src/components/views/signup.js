@@ -37,7 +37,7 @@ class Signup extends React.Component {
             <form onSubmit={this.handleSubmit.bind(this)}>
               <input className='username' name='username' type='text' placeholder='Username' onChange = {(event,newValue) => this.setState({username:newValue})}/>
               <input className='email' name='email' type="text" placeholder="Email" onChange = {(event,newValue) => this.setState({email:newValue})}/>
-              <input className='password' name='password' type="text" placeholder="Password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
+              <input className='password' name='password' type="password" placeholder="Password" onChange = {(event,newValue) => this.setState({password:newValue})}/>
               <button label="Submit">Sign up</button>
             </form>
           </div>
